@@ -13,7 +13,7 @@ import javax.jws.soap.SOAPBinding.Use;
 		endpointInterface="jp.opensquare.sandbox.cxf.jaxws.provider.Calculate",
 		serviceName="CalculateService",
 		portName="CalculatePort",
-		targetNamespace="provider.jaxws.cxf.sandbox.opensquare.jp")
+		targetNamespace="http://provider.jaxws.cxf.sandbox.opensquare.jp/")
 @SOAPBinding(
 		style=Style.DOCUMENT,
 		use=Use.LITERAL,		

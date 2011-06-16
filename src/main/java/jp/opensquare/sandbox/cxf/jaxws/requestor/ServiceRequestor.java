@@ -12,10 +12,12 @@ public class ServiceRequestor {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("requestor-beans.xml");
 
 		Calculate requestor = (Calculate) context.getBean("calculate");
+
 		List<Integer> values = new ArrayList<Integer>();
 		values.add(1);
 		values.add(2);
 		values.add(3);
+		
 		System.out.println("Sum: " + requestor.sum(values));
 		System.exit(0);
 	}
